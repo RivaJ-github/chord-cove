@@ -6,5 +6,5 @@ export const logHub = (data: object | string) => {
     log = JSON.stringify(data);
   }
   const img = new Image();
-  img.src = `/public/log?json=${encodeURIComponent(log)}`;
+  img.src = `/public/log?json=${encodeURIComponent(log)}&_t=${new Date().valueOf()}`;
 };
