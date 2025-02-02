@@ -1,5 +1,5 @@
 // router/index.js
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter, createWebHashHistory } from "vue-router";
 
 import Index from "../pages/index.vue";
 import NewYearEvent from "../pages/NewYearEvent/index.vue";
@@ -22,7 +22,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes,
 });
 

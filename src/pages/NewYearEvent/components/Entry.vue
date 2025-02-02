@@ -8,7 +8,7 @@ const { isTargetUsers, isEventTime, firstShow } = useStore();
 
 const start = () => {
   firstShow.value = false;
-  window.open('/new_year_event', '_blank')
+  window.open('/#/new_year_event', '_blank')
 };
 </script>
 
