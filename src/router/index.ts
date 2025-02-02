@@ -1,25 +1,29 @@
 // router/index.js
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory } from "vue-router";
 
-import Index from '../pages/index.vue'
-import Test from '../pages/test.vue'
+import Index from "../pages/index.vue";
+import NewYearEvent from "../pages/NewYearEvent/index.vue";
 
 const routes = [
   {
-    path: '/',
-    name: 'Playgroud',
-    component: Index
+    path: "/",
+    name: "Playgroud",
+    component: Index,
   },
   {
-    path: '/test',
-    name: 'Happy New Year',
-    component: Test
-  }
-]
+    path: "/new_year_event",
+    name: "Happy New Year",
+    component: NewYearEvent,
+  },
+  {
+    path: "/:catchAll(.*)",
+    redirect: "/",
+  },
+];
 
 const router = createRouter({
   history: createWebHistory(),
-  routes
-})
+  routes,
+});
 
-export default router
+export default router;

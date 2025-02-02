@@ -5,10 +5,13 @@ import { NSpin } from "naive-ui";
 import Playground from "@/components/Playground/index.vue"
 import PlaygroundControls from "@/components/Playground/Controls/index.vue"
 
+import EventEntry from "./NewYearEvent/components/Entry.vue"
+
 const { scoreState } = useAlphaTab();
 </script>
 
 <template>
+  <EventEntry />
   <NSpin :show="scoreState.loadingMusicScore">
     <template #description> Score Loading ... </template>
     <div class="w-screen h-screen">

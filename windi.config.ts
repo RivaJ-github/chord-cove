@@ -14,6 +14,7 @@ export default defineConfig({
         primary: '#36ad6a',
         secondary: '#ffed4a',
         danger: '#e3342f',
+        white: '#fff',
       },
     },
   },
