@@ -21,5 +21,5 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <Index />
+  <router-view />
 </template>
