@@ -216,8 +216,7 @@ onMounted(() => {
 @rem: 200rem;
 
 .hide {
-  opacity: 0;
-  visibility: hidden;
+  display: none;
 }
 
 .blur {
